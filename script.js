@@ -49,6 +49,11 @@ const myLibrary = [
   new Book("Blended", "Sharon M. Draper", 320, "currently reading"),
 ];
 
-for (let i = 0; i < myLibrary.length; i++) {
-  console.log(myLibrary[i].info());
-}
+document.querySelector(".new-book-button").addEventListener("click", () => {
+  const bookDisplayContainer = document.querySelector(
+    ".book-display-container"
+  );
+  for (let i = 0; i < myLibrary.length; i++) {
+    bookDisplayContainer.innerHTML = myLibrary[i].info();
+  }
+});
