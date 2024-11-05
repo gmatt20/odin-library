@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: sans-serif;
 }
 html,
 body {
   height: 100%;
+  position: relative;
 }
 .container {
   display: grid;
@@ -39,12 +41,14 @@ footer {
   grid-column-end: 3;
   padding: 15px;
 }
-button {
+button,
+.submit-button {
   background-color: #1a8056;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  color: white;
 }
 .book-display-container {
   display: grid;
@@ -74,11 +78,26 @@ button {
   display: grid;
   align-items: end;
 }
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 form {
-  background-color: black;
+  background-color: #161c19;
+  border-radius: 0.5rem;
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   padding: 15px;
-  /* align-items: center;
-  justify-content: center; */
+  gap: 1rem;
+  align-items: center;
+}
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+}
+input {
+  color: black;
 }
