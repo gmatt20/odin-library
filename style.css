@@ -74,3 +74,11 @@ button {
   display: grid;
   align-items: end;
 }
+form {
+  background-color: black;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  padding: 15px;
+  /* align-items: center;
+  justify-content: center; */
+}
