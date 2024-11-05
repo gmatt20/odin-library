@@ -78,7 +78,7 @@ button,
   align-items: end;
 }
 .modal {
-  display: block;
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -92,6 +92,23 @@ form {
   grid-template-rows: repeat(6, 1fr);
   padding: 15px;
   gap: 1rem;
+  align-items: center;
+}
+.close-icon {
+  width: 2rem;
+  fill: white;
+  grid-column-start: 3;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.close-icon:hover {
+  transition: 0.2s ease;
+  width: 2.3rem;
+  fill: red;
+}
+.close-icon-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 .form-field {
