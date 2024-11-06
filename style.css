@@ -80,10 +80,26 @@ button,
   padding: 15px;
   border-radius: 0.5rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-rows: 1fr 1fr 0.45fr;
   border-left: 0.4rem #bb86fc solid;
 }
-.book-header {
+.status {
+  display: grid;
+  align-items: end;
+  grid-row-start: 2;
+}
+.pages {
+  grid-row-start: 3;
+}
+.delete-book {
+  display: grid;
+  justify-self: end;
+  width: 2rem;
+  fill: white;
+  grid-column-start: 2;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 .book-name {
   font-size: 2rem;
@@ -119,7 +135,8 @@ form {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.close-icon:hover {
+.close-icon,
+.delete-book:hover {
   transition: 0.2s ease;
   width: 2.3rem;
   fill: #cf6679;
