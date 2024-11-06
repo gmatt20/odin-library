@@ -79,7 +79,7 @@ button,
   max-width: 20rem;
   padding: 15px;
   border-radius: 0.5rem;
-  display: grid;
+  display: none;
   /* grid-template-columns: 1fr 1fr; */
   grid-template-rows: 1fr 1fr 0.45fr;
   border-left: 0.4rem #bb86fc solid;
