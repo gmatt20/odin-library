@@ -44,6 +44,8 @@ form.addEventListener("submit", () => {
   // myLibrary = [new Book(title, author, pages, status)];
   myLibrary.push(new Book(title, author, pages, status, uniqueId));
 
+  form.reset();
+
   CloseModal();
   DisplayBooks();
 });
