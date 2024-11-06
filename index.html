@@ -30,12 +30,16 @@
             <input type="text" name="author" id="author" />
           </div>
           <div class="form-field">
-            <label for="pages">How many pages in</label>
-            <input type="text" name="pages" id="pages" />
+            <label for="pages">How many pages in total</label>
+            <input type="number" name="pages" id="pages" min="1" />
           </div>
           <div class="form-field">
             <label for="status">Status</label>
-            <input type="text" name="status" id="status" />
+            <select name="status" id="status">
+              <option value="Not Started">Not Started</option>
+              <option value="Reading">Reading</option>
+              <option value="Finished Reading">Finished Reading</option>
+            </select>
           </div>
           <input
             class="submit-button js-submit-button"
