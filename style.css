@@ -151,7 +151,8 @@ form {
   display: grid;
   gap: 0.5rem;
 }
-input {
+input,
+select {
   color: black;
   padding: 5px 10px;
   border-radius: 0.2rem;
